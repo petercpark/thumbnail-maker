@@ -48,7 +48,8 @@ def addText():
     # save in new file
     file_location = filedialog.askdirectory(
         initialdir="/ricecakeusa/", title='Select Folder')
-    im.save(file_location + "/" + txt + ".png", "PNG")
+    file_name = file_location + "/" + txt + ".png"
+    im.save(file_name, "PNG")
     im.show()
 
 
